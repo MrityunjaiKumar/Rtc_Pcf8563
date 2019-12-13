@@ -38,7 +38,7 @@ void setup()
   pinMode(3, INPUT);           // set pin to input
   digitalWrite(3, HIGH);       // turn on pullup resistors
 
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   /* setup int on pin 3 of arduino */
   attachInterrupt(1, blink, FALLING);
