@@ -21,7 +21,6 @@
 #include <Wire.h>
 #include <Rtc_Pcf8563.h>
 
-
 //init the real time clock
 Rtc_Pcf8563 rtc;
 uint8_t DECtoBCD(uint8_t val)
@@ -48,6 +47,7 @@ void setup()
     Serial.println("\r\n");
 
     //clear out the registers
+    Wire.begin();
     rtc.initClock();
     int d = BUILD_DATE;
     int m = BUILD_MONTH;

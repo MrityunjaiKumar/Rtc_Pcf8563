@@ -40,7 +40,7 @@
 
 Rtc_Pcf8563::Rtc_Pcf8563(void)
 {
-    Wire.begin();
+
     Rtcc_Addr = RTCC_R>>1;
 }
 
